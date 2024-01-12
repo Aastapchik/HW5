@@ -30,8 +30,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print("Число, которое нужно прибавить к элементу arr[" + i + "][" + j + "]: ");
-                int k = scanner.nextInt();
-                arr[i][j] += k;
+                arr[i][j] += scanner.nextInt();
             }
         }
         scanner.close();
@@ -52,11 +51,9 @@ public class Main {
         System.out.println("******");
         System.out.println("ЗАДАЧА №2");
         String[][] chess = new String[8][8];
-        for(int i = 0; i < chess.length; i++)
-        {
-            for (int j = 0; j < chess[i].length; j++)
-            {
-                if((i+j) % 2 == 0) chess[i][j] = "W";
+        for (int i = 0; i < chess.length; i++) {
+            for (int j = 0; j < chess[i].length; j++) {
+                if ((i + j) % 2 == 0) chess[i][j] = "W";
                 else chess[i][j] = "B";
             }
         }
@@ -67,11 +64,6 @@ public class Main {
             }
             System.out.println();
         }
-
-
-        //System.out.println(Arrays.deepToString(arr));
-
-
     }
 }
 
